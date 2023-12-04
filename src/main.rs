@@ -1,9 +1,6 @@
 use std::io;
 
-fn first() {
-    let input_filename = "data/1.txt";
-    println!("First");
-}
+mod first;
 
 fn main() {
     println!("Which day do you want solved?");
@@ -19,7 +16,7 @@ fn main() {
     println!("You chose day {day}");
 
     match day{
-        1=>first(),
+        1=>first::run(),
         _=>println!("Unsolved"),
     }
 }
